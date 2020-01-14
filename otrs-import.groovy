@@ -85,7 +85,7 @@ def props = new Properties()
 props.setProperty("user",     "otrs_ro") 
 props.setProperty("password", "otrs"   )
 
-def conn = driver.connect("jdbc:mysql://otrd-mysql:3306/otrs", props) 
+def conn = driver.connect("jdbc:mysql://otrs-mysql:3306/otrs", props) 
 def ticket         = new Sql(conn)
 def ticket_history = new Sql(conn)
 def article        = new Sql(conn)
